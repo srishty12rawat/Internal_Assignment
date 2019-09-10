@@ -1,0 +1,15 @@
+I    Use python to read the excel file 
+II   Save the excel in mongo with help of python
+III  Create an API in Node JS to get this saved data in MongoDB and show in Angular Grid
+IV  Create an Angular 8 application with following features:
+	The first tab should be named 'Data Grid' and have a data-table grid which will show all the death data in nested row format:
+		a. Clicking on the row should expand the data for that particular row
+		b. Data should be paginated
+	The second tab should be named 'Analytics', It will have following features:
+		a. One drop down which will show names of all 192 countries (plus have a feature of typeahead)
+		b. Once the Country is selected show a pie chart(from d3.js) with Top level percentage distribution, namely
+		     1. Communicable 
+		     2. Non Communicable
+		     3. Injuries
+		c. Clicking on any first level, show the chart pie chart for next level
+	The third tab should be named 'Trends' and should show live tweets with hashtag of #who and #health
