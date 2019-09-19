@@ -1,4 +1,6 @@
 from xlrd import open_workbook
+
+
 book = open_workbook('death_rate_final.xlsx')
 sheet = book.sheet_by_index(0)
 json_output=open("data.json","w")
@@ -55,3 +57,5 @@ for country_index in range(country_starting_index,country_end_index):
     if(country_index< sheet.ncols-1):
         json_output.write(',')
 json_output.write(']}')
+
+
